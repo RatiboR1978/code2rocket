@@ -1,0 +1,46 @@
+.header {
+  background-color: $bg-color;
+  padding-top: 20px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    a {
+      color: #d9d9ec;
+      text-transform: uppercase;
+      font-family: bold, Arial, sans-serif;
+      margin-right: 30px;
+    }
+    a:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__entry {
+    background-color: $bg-color;
+    border: 3px solid #d24b43;
+    color: #d24b43;
+    text-transform: uppercase;
+    font-family: bold, Arial, sans-serif;
+    padding: 18px 33px;
+    cursor: pointer;
+  }
+
+  &__link--active {
+    position: relative;
+  }
+
+  &__link--active:before {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 1px;
+    background-color: #d24b43;
+    top: 30px;
+    left: 0;
+  }
+}

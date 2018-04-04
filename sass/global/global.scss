@@ -1,0 +1,25 @@
+body {
+  position: relative;
+  font-family: medium, Arial, sans-serif;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1680px;
+  margin: 0 auto;
+}
