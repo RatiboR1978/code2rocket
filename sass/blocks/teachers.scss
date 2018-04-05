@@ -1,0 +1,73 @@
+.teachers {
+  background-color: #d6d6f2;
+  padding-top: 72px;
+  padding-bottom: 377px;
+
+  h2 {
+    font-family: extrabold, Arial, sans-serif;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: center;
+    margin: 0;
+    color: #1f1f79;
+    margin-bottom: 86px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background-color: #1f1f79;
+    padding: 55px 30px;
+    border-radius: 5px;
+    color: #d6d6f2;
+    text-align: center;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    p {
+      font-family: regular, Arial, sans-serif;
+      font-size: 18px;
+      margin-bottom: 58px;
+    }
+  }
+
+  &__circle {
+    width: 316px;
+    height: 316px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d6d6f2;
+    margin: 0 auto 55px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      margin-right: 30px;
+    }
+
+    img:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.teachers__slider .slick-dots {
+  position: absolute;
+  bottom: -110px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
