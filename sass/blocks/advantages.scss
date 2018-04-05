@@ -2,7 +2,7 @@
   background-color: #d6d6f2;
   padding-top: 155px;
   margin-top: -1px;
-  padding-bottom: 220px;
+  padding-bottom: 100px;
   color: #1f1f79;
 
   &__wrap {
@@ -23,23 +23,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
-
-    h3 {
-      font-family: bold, Arial, sans-serif;
-      font-size: 48px;
-      margin-top: 168px;
-    }
 
     p {
       text-align: center;
-      font-size: 30px;
       line-height: 36px;
-      width: 340px;
+      width: 287px;
     }
   }
 
+  &__item-title {
+    font-family: bold, Arial, sans-serif;
+    font-size: 48px;
+    margin-top: 168px;
+    margin-bottom: 0;
+    transition: margin-top .7s;
+    cursor: pointer;
+  }
+
+  &__item-title--active {
+    margin-top: 80px;
+    transition: margin-top .7s;
+  }
+
   &__hidden {
-    display: none;
+    opacity: 0;
+    transition: opacity .7s;
+  }
+
+  &__text {
+    opacity: 1;
+    transition: opacity .7s;
   }
 }
