@@ -482,12 +482,13 @@ h1, h2, h3 {
 
 .about {
   background: #19197c url("../img/svg/rocket.svg") no-repeat;
-  background-position: bottom;
   -webkit-background-size: cover;
           background-size: cover;
+  padding: 0;
   padding-top: 165px;
   padding-bottom: 325px;
-  color: #eaeaf5; }
+  color: #eaeaf5;
+  width: 100%; }
   .about__wrap {
     max-width: 1068px; }
   .about__title {

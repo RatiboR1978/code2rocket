@@ -1,10 +1,11 @@
 .about {
   background: $bg-color url("../img/svg/rocket.svg") no-repeat;
-  background-position: bottom;
   background-size: cover;
+  padding: 0;
   padding-top: 165px;
   padding-bottom: 325px;
   color: #eaeaf5;
+  width: 100%;
 
   &__wrap {
     max-width: 1068px;
