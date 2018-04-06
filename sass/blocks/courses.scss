@@ -73,4 +73,57 @@
     cursor: pointer;
   }
 
+  &__right-wrap {
+    position: absolute;
+    top: 50%;
+    margin-top: -125px;
+    left: -65px;
+    cursor: pointer;
+  }
+
+  &__right-img {
+    transition: all .7s;
+  }
+
+  &__right-wrap:hover &__right-img {
+    transform: scaleX(0) scaleY(0);
+  }
+
+  &__right-circle {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    background-color: #d24b43;
+    border: none;
+    border-radius: 50%;
+    top: 0;
+    left: -81px;
+    transform: scaleX(0) scaleY(0);
+    transition: all .7s;
+  }
+
+  &__right-circle-text {
+    margin: 0;
+    text-align: center;
+    line-height: 290px;
+    text-transform: uppercase;
+    color: #e9e9f1;
+    font-size: 30px;
+    opacity: 0;
+    transition: all .7s;
+  }
+
+  &__right-circle:hover &__right-circle-text {
+    opacity: 1;
+  }
+
+  &__right-position {
+    position: relative;
+  }
+
+  &__right-wrap:hover &__right-circle {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+  }
+
 }

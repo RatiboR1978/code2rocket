@@ -23,11 +23,6 @@ $(function () {
         slidesToScroll: 1
     });
 
-    $('.advantages__item-title').on('click', function () {
-        $(this).next('.advantages__hidden').toggleClass('advantages__text');
-        $(this).toggleClass('advantages__item-title--active');
-    })
-
 
 
 

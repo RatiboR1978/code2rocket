@@ -31,6 +31,10 @@
     }
   }
 
+  &__item-wrap:hover &__item-title {
+    margin-top: 80px;
+  }
+
   &__item-title {
     font-family: bold, Arial, sans-serif;
     font-size: 48px;
@@ -40,18 +44,12 @@
     cursor: pointer;
   }
 
-  &__item-title--active {
-    margin-top: 80px;
-    transition: margin-top .7s;
-  }
-
   &__hidden {
     opacity: 0;
     transition: opacity .7s;
   }
 
-  &__text {
+  &__item-wrap:hover &__hidden {
     opacity: 1;
-    transition: opacity .7s;
   }
 }
