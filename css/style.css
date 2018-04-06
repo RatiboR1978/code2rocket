@@ -685,7 +685,7 @@ h1, h2, h3 {
   -o-transition: all .7s;
   transition: all .7s; }
 
-.courses__right-circle:hover .courses__right-circle-text {
+.courses__right-wrap:hover .courses__right-circle-text {
   opacity: 1; }
 
 .courses__right-position {
