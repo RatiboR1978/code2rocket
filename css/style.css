@@ -603,7 +603,10 @@ h2 {
     text-align: center; }
     .advantages__item p {
       line-height: 36px;
-      width: 287px; }
+      max-width: 257px; }
+      @media (min-width: 1640px) {
+        .advantages__item p {
+          max-width: 287px; } }
     .advantages__item img {
       width: 240px; }
       @media (min-width: 1640px) {
@@ -1104,7 +1107,7 @@ h2 {
   padding: 0;
   margin: 0;
   width: 165px;
-  margin-left: 40%; }
+  margin-left: 38%; }
   .slick-dots li {
     position: relative;
     display: inline-block;

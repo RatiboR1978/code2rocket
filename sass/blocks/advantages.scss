@@ -26,7 +26,10 @@
 
     p {
       line-height: 36px;
-      width: 287px;
+      max-width: 257px;
+      @media (min-width: 1640px) {
+        max-width: 287px;
+      }
     }
 
     img {
