@@ -1,6 +1,9 @@
 .header {
   background-color: $bg-color;
-  padding-top: 20px;
+  padding-top: 15px;
+  @media (min-width: 1640px) {
+    padding-top: 20px;
+  }
 
   &__wrap {
     display: flex;
@@ -8,12 +11,24 @@
     align-items: center;
   }
 
+  &__logo {
+    img {
+      width: 200px;
+      @media (min-width: 1640px) {
+        width: 277px;
+      }
+    }
+  }
+
   &__nav {
     a {
       color: #d9d9ec;
       text-transform: uppercase;
       font-family: bold, Arial, sans-serif;
-      margin-right: 30px;
+      margin-right: 20px;
+      @media (min-width: 1640px) {
+        margin-right: 30px;
+      }
     }
     a:last-child {
       margin-right: 0;
@@ -22,11 +37,15 @@
 
   &__entry {
     background-color: $bg-color;
-    border: 3px solid #d24b43;
+    border: 2px solid #d24b43;
     color: #d24b43;
     text-transform: uppercase;
     font-family: bold, Arial, sans-serif;
-    padding: 18px 33px;
+    padding: 12px 23px;
+    @media (min-width: 1640px) {
+      padding: 18px 33px;
+      border: 3px solid #d24b43;
+    }
   }
 
   &__link--active {
@@ -39,7 +58,10 @@
     width: 34px;
     height: 1px;
     background-color: #d24b43;
-    top: 30px;
+    top: 20px;
     left: 0;
+    @media (min-width: 1640px) {
+      top: 30px;
+    }
   }
 }

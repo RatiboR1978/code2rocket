@@ -2,36 +2,57 @@
   background: $bg-color url("../img/rocket.jpg") no-repeat;
   background-size: cover;
   padding: 0;
-  padding-top: 165px;
-  padding-bottom: 325px;
+  padding-top: 100px;
+  padding-bottom: 300px;
   color: #eaeaf5;
   width: 100%;
+  @media (min-width: 1640px) {
+    padding-top: 165px;
+    padding-bottom: 325px;
+  }
 
   &__wrap {
-    max-width: 1068px;
+    max-width: 700px;
+    @media (min-width: 1640px) {
+      max-width: 1068px;
+    }
   }
 
   &__title {
     font-family: extrabold, Arial, sans-serif;
-    font-size: 60px;
-    line-height: 72px;
+    font-size: 40px;
+    line-height: 52px;
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    @media (min-width: 1640px) {
+      font-size: 60px;
+      line-height: 72px;
+      margin-bottom: 60px;
+    }
   }
 
   &__text {
-    font-size: 36px;
+    font-size: 26px;
     font-family: regular, Arial, sans-serif;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    @media (min-width: 1640px) {
+      margin-bottom: 60px;
+      font-size: 36px;
+    }
   }
   
   &__but {
-    width: 290px;
-    height: 79px;
+    width: 220px;
+    height: 59px;
     background-color: #d24b43;
     border: none;
     cursor: pointer;
     color: #eaeaf5;
+    text-transform: uppercase;
     font-family: bold, Arial, sans-serif;
+    @media (min-width: 1640px) {
+      width: 290px;
+      height: 79px;
+    }
   }
 }

@@ -1,16 +1,20 @@
 .teachers {
   background-color: #d6d6f2;
   padding-top: 72px;
-  padding-bottom: 377px;
+  padding-bottom: 277px;
+  @media (min-width: 1640px) {
+    padding-bottom: 377px;
+  }
 
   h2 {
     font-family: extrabold, Arial, sans-serif;
-    font-size: 72px;
-    line-height: 72px;
     text-align: center;
     margin: 0;
     color: #1f1f79;
-    margin-bottom: 86px;
+    margin-bottom: 66px;
+    @media (min-width: 1640px) {
+      margin-bottom: 86px;
+    }
   }
 
   &__wrap {
@@ -20,10 +24,15 @@
 
   &__item {
     background-color: #1f1f79;
-    padding: 55px 30px;
+    padding: 36px 20px;
     border-radius: 5px;
     color: #d6d6f2;
     text-align: center;
+    max-width: 310px;
+    @media (min-width: 1640px) {
+      padding: 55px 30px;
+      max-width: 510px;
+    }
 
     h3 {
       margin-top: 0;
@@ -39,12 +48,16 @@
   }
 
   &__circle {
-    width: 316px;
-    height: 316px;
+    width: 216px;
+    height: 216px;
     border-radius: 50%;
     border: none;
     background-color: #d6d6f2;
     margin: 0 auto 55px;
+    @media (min-width: 1640px) {
+      width: 316px;
+      height: 316px;
+    }
   }
 
   &__social {

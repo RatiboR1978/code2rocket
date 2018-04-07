@@ -10,12 +10,14 @@
     background-color: #d6d6f2;
     padding-left: 5%;
     padding-right: 10px;
-    padding-top: 68px;
+    padding-top: 30px;
     color: #1f1f79;
+    @media (min-width: 1640px) {
+      padding-top: 68px;
+    }
 
     h2 {
       font-family: extrabold, Arial, sans-serif;
-      font-size: 72px;
       text-align: right;
       margin-top: 0;
       margin-bottom: 138px;
@@ -23,10 +25,17 @@
   }
 
   &__left-text {
-    max-width: 627px;
+    max-width: 500px;
+    @media (min-width: 1640px) {
+      max-width: 627px;
+    }
+
     h3 {
       font-family: bold, Arial, sans-serif;
-      font-size: 48px;
+      font-size: 38px;
+      @media (min-width: 1640px) {
+        font-size: 48px;
+      }
     }
   }
 
@@ -35,13 +44,18 @@
     background-color: #1f1f79;
     padding-left: 10px;
     position: relative;
-    min-height: 1082px;
+    min-height: 700px;
+    padding-top: 30px;
+    @media (min-width: 1640px) {
+      padding-top: 68px;
+      min-height: 1082px;
+    }
 
     h2 {
       font-family: extrabold, Arial, sans-serif;
-      font-size: 72px;
-      margin-top: 68px;
       color: #e5e5ed;
+      margin-top: 0;
+      text-align: left;
     }
   }
 
@@ -49,7 +63,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -222px 0 0 -222px;
+    margin: -172px 0 0 -172px;
+    width: 344px;
+    @media (min-width: 1640px) {
+      width: 444px;
+      margin: -222px 0 0 -222px;
+    }
   }
 
   &__triangle {
