@@ -875,7 +875,12 @@ h2 {
             justify-content: space-between; }
     .teachers__social a {
       margin-right: 30px; }
-    .teachers__social img:last-child {
+    .teachers__social img {
+      width: 32px; }
+      @media (min-width: 1640px) {
+        .teachers__social img {
+          width: 60px; } }
+    .teachers__social a:last-child {
       margin-right: 0; }
 
 .teachers__slider .slick-dots {
