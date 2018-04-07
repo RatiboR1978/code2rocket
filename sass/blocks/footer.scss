@@ -11,8 +11,13 @@
   &__about {
     max-width: 360px;
     font-family: regular, Arial, sans-serif;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
+    @media (min-width: 1640px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
     p {
       margin-bottom: 60px;
     }
@@ -25,9 +30,13 @@
   &__nav {
     h3 {
       margin-top: 0;
-      font-size: 30px;
-      margin-bottom: 45px;
+      font-size: 25px;
+      margin-bottom: 35px;
       font-family: regular, Arial, sans-serif;
+      @media (min-width: 1640px) {
+        font-size: 30px;
+        margin-bottom: 45px;
+      }
     }
 
     ul {
@@ -35,7 +44,10 @@
 
       li {
         list-style-type: none;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        @media (min-width: 1640px) {
+          margin-bottom: 20px;
+        }
         a {
           color: #d6d6f2;
           line-height: 24px;
@@ -49,8 +61,12 @@
   }
 
   &__social-icon {
-    margin-bottom: 44px;
+    margin-bottom: 30px;
     margin-top: -10px;
+    @media (min-width: 1640px) {
+      margin-bottom: 44px;
+    }
+
     a {
       margin-right: 25px;
     }
@@ -81,11 +97,15 @@
   &__social-circle {
     margin-left: 12px;
     margin-right: 30px;
-    width: 66px;
-    height: 66px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     border: none;
     background-color: #d6d6f2;
+    @media (min-width: 1640px) {
+      width: 66px;
+      height: 66px;
+    }
   }
 
   &__social-title {
@@ -108,19 +128,26 @@
   }
 
   &__social-block {
-    max-width: 320px;
+    max-width: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 12px;
     margin-right: 12px;
     margin-top: 15px;
+    @media (min-width: 1640px) {
+      max-width: 320px;
+    }
   }
 
   &__social-item {
-    width: 68px;
-    height: 42px;
+    width: 58px;
+    height: 32px;
     background-color: #d6d6f2;
     margin-bottom: 12px;
+    @media (min-width: 1640px) {
+      width: 68px;
+      height: 42px;
+    }
   }
 }
