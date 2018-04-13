@@ -1,26 +1,15 @@
 .social-link {
-  display: block;
-  max-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 213px;
   a {
     margin-right: 15px;
-    @media (max-width: 1410px) {
-      margin-right: 10px;
-    }
-
     img {
       max-width: 42px;
       max-height: 42px;
-      @media (max-width: 1640px) {
-        max-width: 35px;
-        max-height: 35px;
-      }
     }
-
   }
   a:last-child {
     margin-right: 0;
-  }
-  @media (min-width: 1410px) {
-    max-width: 258px;
   }
 }

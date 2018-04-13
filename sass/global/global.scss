@@ -29,17 +29,21 @@ h1, h2, h3 {
 
 h2 {
   font-family: extrabold, Arial, sans-serif;
-  font-size: 52px;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 32px;
   text-align: center;
+  @media (min-width: 400px) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  @media (min-width: 960px) {
+    font-size: 52px;
+    line-height: 52px;
+  }
   @media (min-width: 1640px) {
     font-size: 72px;
     line-height: 72px;
   }
-}
-
-.grid {
-  display: grid;
 }
 
 .container {

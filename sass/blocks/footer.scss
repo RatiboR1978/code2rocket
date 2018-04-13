@@ -5,7 +5,12 @@
 
   &__wrap {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 840px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__about {

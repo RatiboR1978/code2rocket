@@ -19,7 +19,12 @@
 
   &__wrap {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 950px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -28,7 +33,16 @@
     border-radius: 5px;
     color: #d6d6f2;
     text-align: center;
-    max-width: 310px;
+    max-width: 200px;
+    margin-bottom: 10px;
+    @media (min-width: 950px) {
+      max-width: 250px;
+      margin-bottom: 0;
+    }
+    @media (min-width: 1300px) {
+      max-width: 310px;
+    }
+
     @media (min-width: 1640px) {
       padding: 55px 30px;
       max-width: 510px;
@@ -48,12 +62,16 @@
   }
 
   &__circle {
-    width: 216px;
-    height: 216px;
+    width: 116px;
+    height: 116px;
     border-radius: 50%;
     border: none;
     background-color: #d6d6f2;
     margin: 0 auto 55px;
+    @media (min-width: 950px) {
+      width: 216px;
+      height: 216px;
+    }
     @media (min-width: 1640px) {
       width: 316px;
       height: 316px;
